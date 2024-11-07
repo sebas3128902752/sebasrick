@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all .2s;
+}
+:root{
+    --card-color: #353535;
+    --font-color: gray;
+}
+body{
+    background-color: #3b3737;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+}
+.search{
+    width: 500px;
+    height: 40px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 5px solid var(--font-color);
+    background-color: var(--card-color);
+    border-radius: 5px;
+    color: #fff;
+    padding: 0 5px;
+    font-weight: 500;
+}
+main{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 5px;
+}
+.card{
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    background-color: var(--card-color);
+    width: 700px;
+    height: fit-content;
+    padding: 0 50px 0 0;
+    color: white;
+    border-radius: 10px;
+}
+.card:hover{
+    box-shadow: 0px 0px 10px 0px var(--font-color);
+}
+.imgCard{
+    border-radius: 8px 0 0 8px;
+    background-size: cover;
+}
+.txt{
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.name{
+    font-size: 2.5rem;
+    max-width: 400px;
+    min-width: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.status, .specie{
+    font-size: 1.1rem;
+    color: gray;
+    max-width: 170px;
+}
+.status:hover, .specie:hover{
+    color: var(--font-color);
+    text-shadow: none;
+    cursor: pointer;
+}
+#btnReset{
+    width: 50px;
+    height: 50px;
+    background: url('../assets/image/refresh.png');
+    border-radius: 1000px;
+    background-position: center;
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 30px;
+    bottom: 50px;
+}
+#btnReset:hover{
+    box-shadow: 0px 0px 15px 0px white;
+}
